@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./styles.scss","loc":{"line":1,"column":7}}],"generated":{"js":"\"use strict\";require(\"./styles.scss\"),document.write(\"hmr + hmr + hmr\");"},"hash":"09771093c4bddcbdc57fda06ba037b68"}
