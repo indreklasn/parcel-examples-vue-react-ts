@@ -65,7 +65,7 @@ require = (function (modules, cache, entry) {
 
     // Override the current require with this new one
     return newRequire;
-})({13:[function(require,module,exports) {
+})({12:[function(require,module,exports) {
 var global = (1,eval)("this");
 /*!
  * Vue.js v2.5.11
@@ -7242,7 +7242,7 @@ Vue$3.nextTick(function () {
 /*  */
 
 module.exports = Vue$3;
-},{}],14:[function(require,module,exports) {
+},{}],17:[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = (window.__VUE_HOT_MAP__ = Object.create(null))
@@ -7472,7 +7472,7 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],20:[function(require,module,exports) {
+},{}],19:[function(require,module,exports) {
 var inserted = exports.cache = {}
 
 function noop () {}
@@ -7497,7 +7497,7 @@ exports.insert = function (css) {
   }
 }
 
-},{}],8:[function(require,module,exports) {
+},{}],6:[function(require,module,exports) {
 "use strict";
 
 var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("/* line 16, stdin */\nh1[data-v-6f48ed6a] {\n  color: #05ede1; }");(function () {
@@ -7536,7 +7536,7 @@ if (module.hot) {
     }
   })();
 }
-},{"vue":13,"vue-hot-reload-api":14,"vueify/lib/insert-css":20}],19:[function(require,module,exports) {
+},{"vue":12,"vue-hot-reload-api":17,"vueify/lib/insert-css":19}],18:[function(require,module,exports) {
 var global = (1,eval)("this");
 /*!
  * Vue.js v2.5.11
@@ -18298,7 +18298,7 @@ return Vue$3;
 
 })));
 
-},{}],5:[function(require,module,exports) {
+},{}],3:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -18329,7 +18329,7 @@ if (module.hot) {
 }
 
 exports.default = app;
-},{"./app.vue":8,"vue/dist/vue.js":19}],0:[function(require,module,exports) {
+},{"./app.vue":6,"vue/dist/vue.js":18}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module(config) {
@@ -18348,7 +18348,7 @@ function Module(config) {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent) {
-    var ws = new WebSocket('ws://localhost:53142/');
+    var ws = new WebSocket('ws://localhost:52605/');
     ws.onmessage = (e) => {
         var data = JSON.parse(e.data);
 
@@ -18440,4 +18440,4 @@ function hmrAccept(bundle, id) {
 
     return getParents(global.require, id).some(id => hmrAccept(global.require, id));
 }
-},{}]},{},[0,5])
+},{}]},{},[0,3])
