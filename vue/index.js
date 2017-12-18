@@ -10,4 +10,8 @@ const app = window.addEventListener('load', () => {
   })
 })
 
+if (module.hot) {
+	module.hot.accept();
+}
+
 export default app;

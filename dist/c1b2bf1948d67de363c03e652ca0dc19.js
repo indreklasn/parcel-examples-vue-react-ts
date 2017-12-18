@@ -65,7 +65,7 @@ require = (function (modules, cache, entry) {
 
     // Override the current require with this new one
     return newRequire;
-})({14:[function(require,module,exports) {
+})({15:[function(require,module,exports) {
 var global = (1,eval)("this");
 /*!
  * Vue.js v2.5.11
@@ -7242,7 +7242,7 @@ Vue$3.nextTick(function () {
 /*  */
 
 module.exports = Vue$3;
-},{}],15:[function(require,module,exports) {
+},{}],16:[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = (window.__VUE_HOT_MAP__ = Object.create(null))
@@ -7472,7 +7472,7 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],17:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 var inserted = exports.cache = {}
 
 function noop () {}
@@ -7536,7 +7536,7 @@ if (module.hot) {
     }
   })();
 }
-},{"vue":14,"vue-hot-reload-api":15,"vueify/lib/insert-css":17}],16:[function(require,module,exports) {
+},{"vue":15,"vue-hot-reload-api":16,"vueify/lib/insert-css":18}],17:[function(require,module,exports) {
 var global = (1,eval)("this");
 /*!
  * Vue.js v2.5.11
@@ -18324,8 +18324,12 @@ var app = window.addEventListener('load', function () {
   });
 });
 
+if (module.hot) {
+  module.hot.accept();
+}
+
 exports.default = app;
-},{"./app.vue":5,"vue/dist/vue.js":16}],0:[function(require,module,exports) {
+},{"./app.vue":5,"vue/dist/vue.js":17}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module(config) {
@@ -18344,7 +18348,7 @@ function Module(config) {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent) {
-    var ws = new WebSocket('ws://localhost:58467/');
+    var ws = new WebSocket('ws://localhost:52110/');
     ws.onmessage = (e) => {
         var data = JSON.parse(e.data);
 
